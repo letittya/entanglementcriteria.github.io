@@ -2,11 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>References - entanglement criteria </title>
+  <style>
+    /* Remove default list styling and set up a counter */
+    ol {
+      list-style: none;
+      padding-left: 0;
+      counter-reset: ref-counter;
+    }
+    /* For each list item, increment the counter and display it in square brackets */
+    li {
+      margin-bottom: 20px;
+    }
+    li:before {
+      counter-increment: ref-counter;
+      content: "[" counter(ref-counter) "] ";
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    /* Optional styling for individual fields */
+    .field {
+      margin: 2px 0;
+    }
+    .field strong {
+      display: inline-block;
+      width: 70px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This is a temporary page. Content coming soon!</p>
+  <h1>References</h1>
+  <ol>
+    <li>
+      <div class="field"><strong>Author:</strong> Ali Furkan Kalay</div>
+      <div class="field"><strong>Title:</strong> UQ Beamerposter Template</div>
+      <div class="field"><strong>Journal:</strong> Overleaf Poster Templates</div>
+      <div class="field"><strong>Year:</strong> 2021</div>
+      <div class="field"><strong>URL:</strong> 
+        <a href="https://www.overleaf.com/latex/templates/uq-beamerposter-template/svbpbndqdpqv" target="_blank">
+          https://www.overleaf.com/latex/templates/uq-beamerposter-template/svbpbndqdpqv
+        </a>
+      </div>
+    </li>
+    <!-- Add more <li> items below for additional references -->
+  </ol>
 </body>
 </html>
